@@ -47,7 +47,7 @@ body {
   margin: 0 0 20px 0;
   color: #ffa500;
   font-family: 'IM Fell Double Pica', serif;
-  line-height: 0.9em;
+  line-height: 1.1em;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); 
 }
 
@@ -143,5 +143,28 @@ body {
 /* Custom */
 .whoami {
   background: rgba(122,122,122,.5);
+}
+.reveal section img.inline-images {
+  margin: 15px;
+}
+.reveal section.tim ul {
+  width: 550px;
+  float: right;
+}
+.reveal section img.trans-images {
+  border: 0px;
+  background: none;
+  box-shadow: none;
+}
+
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3,
+.reveal .slides h4,
+.reveal .slides h5,
+.reveal .slides h6 {
+  -webkit-hyphens: none;
+	 -moz-hyphens: none;
+	      hyphens: none;
 }
 
