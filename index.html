@@ -196,128 +196,129 @@
 					<h2>Drupal's boss was impressed.</h2>
 					<img src="./images/boss.jpg" alt="Woman giving thumbs up" />
 				</section>
-
+				
 				<section>
-					<h2>We called Drupal's new toolbox WF Tools.</h2>
 					<h2>And they all deployed happily ever after.</h2>
 				</section>
-				
+
 				<section>
-					<h2>Why do you need WF Tools?</h2>
+					<h2>What made Drupal's boss happy?</h2>
 				</section>
 				
 				<section>
-					<h2>Standard Drupal Workflow: Code goes up, Content comes down (sometimes).</h2>
+					<h2>Well, let's start with how Drupal used to go about his job.</h2>
+				</section>
+				
+				<section>
+					<h2>Drupal's Average Day: Code goes up, Content comes down (sometimes).</h2>
 					<img src="./images/chart_standard_drupal_flow.png" alt="Code goes up, Content comes down (sometimes)." class="trans-images"/>
 				</section>
 				
 				<section>
-					<h2>How often does Staging really reflect Production?</h2>
+					<h2>Drupal found this had some problems.</h2>
+					<img src="./images/drupal_sad_face.jpg" />
 				</section>
 				
 				<section>
-					<h2>How do you preview content on Staging if you are entering it on Production?</h2>
+					<h2>Can I really look at content before it's on Production?</h2>
 				</section>
 				
 				<section>
-					<h2>How do you audit and approve your code or content changes?</h2>
+					<h2>How do I get a log of all my changes?</h2>
 				</section>
 				
 				<section>
-					<h2>How do you preview code changes independently?</h2>
+					<h2>How do look at a change by itself?</h2>
 				</section>
 				
 				<section>
-					<h2>What if your new Production content depends on an upcoming code change that's only on Staging?  How do you bundle these 2 together into a single deployment?</h2>
+					<h2>How can I bundle different changes together?</h2>
 				</section>
 				
 				<section>
-					<h2>What if you have more than one code change you need to preview on Staging but push to Production independently?</h2>
+					<h2>How do I look at several changes, but only push 1 of them to Production?</h2>
 				</section>
 				
 				<section>
-					<h2>How do you test your code deployment?</h2>
+					<h2>How do I test my deployment?</h2>
 				</section>
 				
 				<section>
-					<h2>What if you don't want people logging into Production to make content changes?</h2>
+					<h2>How do I keep people from doing work on Production?</h2>
 				</section>
 				
 				<section>
-					<h2>WF Tools provides an answer for all this</h2>
+					<h2>Drupal found the answers in it's new toolbox.</h2>
+					<img src="./images/toolbox.jpg" alt="Toolbox" />
 				</section>
 				
 				<section>
-					<h2>WF Tools Workflow: Code goes up, Content goes up.</h2>
+					<h2>Drupal's New Idea: Code goes up, Content goes up.</h2>
 					<img src="./images/chart_wftools_flow.png" alt="Code goes up, Content goes up." class="trans-images"/>
 				</section>
 				
 				<section>
-					<h2>Staging is always current with Production.</h2>
+					<h2>Drupal can preview his content in context on Staging, Integration or in a Development Sandbox.</h2>
 				</section>
 				
 				<section>
-					<h2>Preview your content in context on Staging, Integration or your Development Sandbox.</h2>
+					<h2>Drupal can now bundle any arbitrary set of changes into a "job".</h2>
 				</section>
 				
 				<section>
-					<h2>WF Tools bundles any arbitrary set of changes into a "job".</h2>
+					<h2>Drupal can approve the changes in the job each step of the way in a fully auditable process.</h2>
 				</section>
 				
 				<section>
-					<h2>WF Tools allows users to approve the changes in the job each step of the way in a fully auditable process.</h2>
+					<h2>Having a development sandbox per job lets Drupal work on each change independently.</h2>
 				</section>
 				
 				<section>
-					<h2>Having a development sandbox per job lets you work on each change independently.</h2>
+					<h2>Drupal can group code changes with content changes so both get promoted together.</h2>
 				</section>
 				
 				<section>
-					<h2>Group code changes with content changes in your development sandbox so both get promoted together.</h2>
+					<h2>Drupal can push several jobs to his Staging server, but only push a single job up to Production when he's ready.</h2>
 				</section>
 				
 				<section>
-					<h2>Push any number of jobs to your Staging server, but only push a single job up to Production when you're ready.</h2>
+					<h2>Drupal tests his deployments at every step along the way!</h2>
 				</section>
 				
 				<section>
-					<h2>Every time you move a job up to the next environment, you are fully testing how you will deploy to Production.</h2>
+					<h2>Drupal now has the ability to create, edit, preview and push content without ever logging into Production.</h2>
 				</section>
 				
 				<section>
-					<h2>WF Tools gives you the ability to create, edit, preview and push content without ever logging into Production.</h2>
+					<h2>But Drupal, how does all this work?</h2>
 				</section>
 				
 				<section>
-					<h2>How does WF Tools work?</h2>
+					<h2>Here's a story of a little job called "Change123"</h2>
 				</section>
 				
 				<section>
-					<h2>Let's describe a job called "Change123"</h2>
-				</section>
-				
-				<section>
-					<h2>WF Tools manages the journey of "Change123" across different environments.</h2>
+					<h2>Drupal now manages the journey of "Change123" across different environments.</h2>
 					<img src="./images/chart_wftools_job.png" alt="Code goes up, Content goes up." class="trans-images"/>
 				</section>
 				
 				<section>
-					<h2>Here's how "Change123" begins</h2>
+					<h2>"Change123" starts his journey here:</h2>
 						<ol>
-							<li class="fragment">WF Tools spins up a new dedicated drupal sandbox called change123.dev.site.com</li>
-							<li class="fragment">WF Tools creates a git branch named "change123" and checks it out on the sandbox</li>
-							<li class="fragment">WF Tools creates a deployment plan in the deploy module called "change123" and automatically adds any saved entities to it</li>
-							<li class="fragment">The developer or content editor makes their changes in the sandbox</li>
-							<li class="fragment">Once the changes are ready, the job is ready for promotion to the next environment</li>
+							<li class="fragment">Drupal spins up a new dedicated drupal sandbox called change123.dev.site.com</li>
+							<li class="fragment">He creates a git branch named "change123" and checks it out on the sandbox</li>
+							<li class="fragment">He then creates a deployment plan in the deploy module called "change123"</li>
+							<li class="fragment">Drupal makes his changes in the sandbox</li>
+							<li class="fragment">Once the changes are ready, Drupal is ready to push them to the next environment</li>
 						</ol>
 				</section>
 				
 				<section>
-					<h2>"Change123" is now ready to be pushed up to the Integration environment for verification.</h2>
+					<h2>"Change123" is now ready to be pushed up to the Integration environment.</h2>
 						<ol>
-							<li class="fragment">WF Tools merges the "change123" git branch into the "integration" git branch and pushes it to the Integration server</li>
-							<li class="fragment">WF Tools triggers the "change123" deployment plan to be pushed to the Integration server</li>
-							<li class="fragment">The developer or content editor looks at their changes merged into the Integration server, and approves them to be pushed up to the Staging environment</li>
+							<li class="fragment">Drupal merges the "change123" git branch into the "integration" git branch and pushes it to the Integration server</li>
+							<li class="fragment">Drupal triggers the "change123" deployment plan to be pushed to the Integration server</li>
+							<li class="fragment">Drupal sits back and looks at his changes merged into the Integration server, and approves them to be pushed up to the Staging environment</li>
 						</ol>
 				</section>
 				
@@ -326,11 +327,7 @@
 				</section>
 				
 				<section>
-					<h2>All of the jobs' statuses are tracked in WF Tools.  You can tell at a glance which jobs are in which environments, and which are ready for approval.</h2>
-				</section>
-				
-				<section>
-					<h2>And they all deployed happily ever after.</h2>
+					<h2>All of the jobs' statuses are tracked by Drupal.  He can tell at a glance which jobs are in which environments, and which are ready for approval.</h2>
 				</section>
 
 				<section>
@@ -346,7 +343,7 @@
 				</section>
 
 				<section>
-					<h2>each week there was almost 3 new sites.</h2>
+					<h2>Each week there was almost 3 new sites.</h2>
 				</section>
 
 				<section>
