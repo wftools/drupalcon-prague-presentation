@@ -228,7 +228,7 @@
 				</section>
 				
 				<section>
-					<h2>What if your new Production content depends on an upcoming code change that's only on Staging?  How do you bundles these 2 together into a single deployment?</h2>
+					<h2>What if your new Production content depends on an upcoming code change that's only on Staging?  How do you bundle these 2 together into a single deployment?</h2>
 				</section>
 				
 				<section>
@@ -269,7 +269,7 @@
 				</section>
 				
 				<section>
-					<h2>Having a development sandboxes per job lets you work on each change independently.</h2>
+					<h2>Having a development sandbox per job lets you work on each change independently.</h2>
 				</section>
 				
 				<section>
@@ -277,7 +277,7 @@
 				</section>
 				
 				<section>
-					<h2>Push any number of jobs to your Staging server, but only push a single job up to Production.</h2>
+					<h2>Push any number of jobs to your Staging server, but only push a single job up to Production when you're ready.</h2>
 				</section>
 				
 				<section>
@@ -286,6 +286,47 @@
 				
 				<section>
 					<h2>WF Tools gives you the ability to create, edit, preview and push content without ever logging into Production.</h2>
+				</section>
+				
+				<section>
+					<h2>How does WF Tools work?</h2>
+				</section>
+				
+				<section>
+					<h2>Let's describe a job called "Change123"</h2>
+				</section>
+				
+				<section>
+					<h2>WF Tools manages the promotion of Change123 across the different environments.</h2>
+					<img src="./images/chart_wftools_job.png" alt="Code goes up, Content goes up." class="trans-images"/>
+				</section>
+				
+				<section>
+					<h2>Here's how "Change123" begins</h2>
+						<ol>
+							<li class="fragment">WF Tools spins up a new dedicated drupal sandbox called change123.dev.site.com</li>
+							<li class="fragment">WF Tools creates a git branch named "change123" and checks it out on the sandbox</li>
+							<li class="fragment">WF Tools creates a deployment plan in the deploy module called "change123" and automatically adds any saved entities to it</li>
+							<li class="fragment">The developer or content editor makes their changes in the sandbox</li>
+							<li class="fragment">Once the changes are ready, the job is ready for promotion to the next environment</li>
+						</ol>
+				</section>
+				
+				<section>
+					<h2>"Change123" is now ready to be pushed up to the Integration environment for verification.</h2>
+						<ol>
+							<li class="fragment">WF Tools merges the "change123" git branch into the "integration" git branch and pushes it to the Integration server</li>
+							<li class="fragment">WF Tools triggers the "change123" deployment plan to be pushed to the Integration server</li>
+							<li class="fragment">The developer or content editor looks at their changes merged into the Integration server, and approves them to be pushed up to the Staging environment</li>
+						</ol>
+				</section>
+				
+				<section>
+					<h2>From there, the same merge/approval happens on Staging before being pushed to Production.</h2>
+				</section>
+				
+				<section>
+					<h2>All of the jobs' statuses are tracked in WF Tools.  You can tell at a glance which jobs are in which environments, and which are ready for approval.</h2>
 				</section>
 
 				<section>
