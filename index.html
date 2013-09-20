@@ -63,7 +63,7 @@
 						<li class="fragment">Drupalista</li>
 						<li class="fragment">Systems Architect</li>
 						<li class="fragment">Large Scale Migration Specialist</li>
-						<li class="fragment">NOT Dries (just to eliminate any confusion)</li>
+						<li class="fragment">NOT Dries</li>
 					</ul>
 					<aside class="notes">
 						Tim Holt's mug shot
@@ -77,12 +77,12 @@
 				<section>
 					<h2>Disclaimer</h2>
 					<p>
-						This presentation outlines a general technology 
-						direction.  Pfizer Inc has no obligation to pursue 
-						any approaches outlined in this presentation or to 
-						develop or use any functionality mentioned in this 
-						presentation.  The technology strategy and possible 
-						future developments are subject to change and may 
+						This presentation outlines a general technology
+						direction.  Pfizer Inc has no obligation to pursue
+						any approaches outlined in this presentation or to
+						develop or use any functionality mentioned in this
+						presentation.  The technology strategy and possible
+						future developments are subject to change and may
 						be changed at any time for any reason without notice.
 					</p>
 				</section>
@@ -161,6 +161,19 @@
 				</section>
 
 				<section>
+					<h2>Drupal's boss was impressed.</h2>
+					<img src="./images/boss.jpg" alt="Woman giving thumbs up" />
+				</section>
+
+				<section>
+					<h2>And they all deployed happily ever after.</h2>
+				</section>
+
+				<section>
+					<h2>What was in the toolbox that made Drupal's boss so happy?</h2>
+				</section>
+
+				<section>
 					<h2>UUID</h2>
 				</section>
 
@@ -193,141 +206,148 @@
 				</section>
 
 				<section>
-					<h2>Drupal's boss was impressed.</h2>
-					<img src="./images/boss.jpg" alt="Woman giving thumbs up" />
-				</section>
-				
-				<section>
-					<h2>And they all deployed happily ever after.</h2>
+					<h2>These tools allowed Drupal to do things very differently.</h2>
 				</section>
 
 				<section>
-					<h2>What made Drupal's boss happy?</h2>
-				</section>
-				
-				<section>
-					<h2>Well, let's start with how Drupal used to go about his job.</h2>
-				</section>
-				
-				<section>
-					<h2>Drupal's Average Day: Code goes up, Content comes down (sometimes).</h2>
+					<h2>When Drupal was younger code went up and content came down.</h2>
 					<img src="./images/chart_standard_drupal_flow.png" alt="Code goes up, Content comes down (sometimes)." class="trans-images" />
 				</section>
-				
+
 				<section>
-					<h2>Drupal found this had some problems.</h2>
+					<h2>No one could look at content before it's on Production.</h2>
+				</section>
+
+				<section>
+					<h2>There was no log of all changes.</h2>
+				</section>
+
+				<section>
+					<h2>A change couldn't be isolated from the rest of the site.</a>
+				</section>
+
+				<section>
+					<h2>Different changes couldn't be bundled together.</h2>
+				</section>
+
+				<section>
+					<h2>Deployment was an all or nothing event.</h2>
+				</section>
+
+				<section>
+					<h2>Deployments couldn't be tested.</h2>
+				</section>
+
+				<section>
+					<h2>Per environment permissions and configuration weren't possible.</h2>
+				</section>
+
+				<section>
+					<h2>This all made Drupal very sad.</h2>
 					<img src="./images/druplicon_sad.png" class="trans-images" />
 				</section>
-				
+
 				<section>
-					<h2>Can I really look at content before it's on Production?</h2>
-				</section>
-				
-				<section>
-					<h2>How do I get a log of all my changes?</h2>
-				</section>
-				
-				<section>
-					<h2>How do look at a change by itself?</h2>
-				</section>
-				
-				<section>
-					<h2>How can I bundle different changes together?</h2>
-				</section>
-				
-				<section>
-					<h2>How do I look at several changes, but only push 1 of them to Production?</h2>
-				</section>
-				
-				<section>
-					<h2>How do I test my deployment?</h2>
-				</section>
-				
-				<section>
-					<h2>How do I keep people from doing work on Production?</h2>
-				</section>
-				
-				<section>
-					<h2>Drupal found the answers in it's new toolbox.</h2>
-					<img src="./images/toolbox.jpg" alt="Toolbox" />
-				</section>
-				
-				<section>
-					<h2>Drupal's New Idea: Code goes up, Content goes up.</h2>
+					<h2>Drupal decided to send everything up.</h2>
 					<img src="./images/chart_wftools_flow.png" alt="Code goes up, Content goes up." class="trans-images" />
 				</section>
-				
+
 				<section>
 					<h2>Drupal can now bundle any arbitrary set of changes into a "job".</h2>
 				</section>
-				
+
 				<section>
-					<h2>Drupal can approve the changes in the job each step of the way, and log what he's doing.</h2>
+					<h2>Drupal can approve the changes in the job each step of the way, and log what's happened.</h2>
+					<img src="./images/radar.jpg" alt="Radar control panel" />
 				</section>
-				
+
 				<section>
 					<h2>Drupal can group code changes with content changes so both get promoted together.</h2>
 				</section>
-				
+
 				<section>
 					<h2>Having a development sandbox per job lets Drupal work on each change independently.</h2>
+					<img src="./images/sandpit.jpg" alt="Kid in a sandpit" />
 				</section>
-				
+
 				<section>
-					<h2>Drupal can preview his content in context.</h2>
+					<h2>Drupal can preview content in context.</h2>
 				</section>
-				
+
 				<section>
-					<h2>Drupal can push several jobs to his Staging server, but only push a single job up to Production when he's ready.</h2>
+					<h2>Drupal can push several jobs to the staging server,</h2>
 				</section>
-				
+
 				<section>
-					<h2>Drupal tests his deployments at every step along the way!</h2>
+					<h2>but only push a single job up to Production when it's ready.</h2>
+					[revolver with a single bullet in it?]
 				</section>
-				
+
+				<section>
+					<h2>Drupal tests deployments at every step along the way!</h2>
+				</section>
+
 				<section>
 					<h2>Drupal now has the ability to create, edit, preview and push content without ever logging into Production.</h2>
+					[very wordy]
 				</section>
-				
+
 				<section>
-					<h2>But Drupal, how does all this work?</h2>
+					<h2>Drupal has a little cousin.</h2>
 				</section>
-				
+
 				<section>
-					<h2>Here's a story of a little job called "Change123"</h2>
+ 					<h2>Drupal's cousin's name is "job123".</h2>
 				</section>
-				
+
 				<section>
-					<h2>Drupal now manages the journey of "Change123" across different environments.</h2>
+					<h2>Drupal makes sure job123 is safe on this epic journey.</h2>
 					<img src="./images/chart_wftools_job.png" alt="Code goes up, Content goes up." class="trans-images"/>
 				</section>
-				
+
 				<section>
-					<h2>"Change123" starts his journey here:</h2>
+					<h2>Job123 started off as nothing more than a twinkle in somebody's eye.</h2>
+				</section>
+
+				<section>
+					<h2>Make each of these a new slide and the same for the others</h2>
 						<ol>
-							<li class="fragment">Drupal spins up a new dedicated drupal sandbox called change123.dev.site.com</li>
-							<li class="fragment">He creates a git branch named "change123" and checks it out on the sandbox</li>
-							<li class="fragment">He then creates a deployment plan in the deploy module called "change123"</li>
+							<li class="fragment">Drupal spins up a new dedicated drupal sandbox called job123.dev.site.com</li>
+							<li class="fragment">He creates a git branch named "job123" and checks it out on the sandbox</li>
+							<li class="fragment">He then creates a deployment plan in the deploy module called "job123"</li>
 							<li class="fragment">Drupal makes his changes in the sandbox</li>
 							<li class="fragment">Once the changes are ready, Drupal is ready to push them to the next environment</li>
 						</ol>
 				</section>
-				
+
 				<section>
-					<h2>"Change123" is now ready to be pushed up to the Integration environment.</h2>
+					<h2>"job123" is now big enough to move to the integration environment.</h2>
 						<ol>
-							<li class="fragment">Drupal merges the "change123" git branch into the "integration" git branch and pushes it to the Integration server</li>
-							<li class="fragment">Drupal triggers the "change123" deployment plan to be pushed to the Integration server</li>
+							<li class="fragment">Drupal merges the "job123" git branch into the "integration" git branch and pushes it to the Integration server</li>
+							<li class="fragment">Drupal triggers the "job123" deployment plan to be pushed to the Integration server</li>
 							<li class="fragment">Drupal sits back and looks at his changes merged into the Integration server, and approves them to be pushed up to the Staging environment</li>
 						</ol>
 				</section>
-				
+
 				<section>
 					<h2>From there, the same merge/approval happens on Staging before being pushed to Production.</h2>
 				</section>
-				
+
 				<section>
-					<h2>All of the jobs' statuses are tracked by Drupal.  He can tell at a glance which jobs are in which environments, and which are ready for approval.</h2>
+					<h2>All of the jobs' statuses are tracked by Drupal.</h2>
+				</section>
+
+				<section>
+					<h2>Drupal can tell at a glance which jobs are in which environments, and which are ready for approval.</h2>
+				</section>
+
+				<section>
+					<h2>The rolling releases model</h2>
+					<img src="./images/kids-rolling.jpg" alt="Kids rolling down a hill" />
+				</section>
+
+				<section>
+					<h2>allow people to go from idea to prod in an afternoon.</h2>
 				</section>
 
 				<section>
@@ -354,7 +374,12 @@
 				<section>
 					<h2>DEMO</h2>
 				</section>
-				
+
+				<section>
+					<h2>Drupal's boss at Pfizer was impressed.</h2>
+					[insert pic of Mike here]
+				</section>
+
 				<section>
 					<h2>And they all deployed happily ever after.</h2>
 					<h1>THE END</h1>
@@ -383,19 +408,20 @@
 				<section>
 					<h2>Copyright</h2>
 					<p>
-						<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/au/"><img alt="Creative Commons License" style="border-width:0" 
-						src="http://i.creativecommons.org/l/by-nc-sa/3.0/au/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" 
-						property="dct:title" rel="dct:type">WFTools FTW</span> by <a xmlns:cc="http://creativecommons.org/ns#" 
-						href="http://davehall.com.au" property="cc:attributionName" rel="cc:attributionURL">Dave Hall</a> is licensed under a <a rel="license" 
+						<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/au/"><img alt="Creative Commons License" style="border-width:0"
+						src="http://i.creativecommons.org/l/by-nc-sa/3.0/au/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
+						property="dct:title" rel="dct:type">WFTools FTW @ Pfizer</span> by <a xmlns:cc="http://creativecommons.org/ns#"
+						href="http://davehall.com.au" property="cc:attributionName" rel="cc:attributionURL">Dave Hall</a> 
+						and <a href="http://cinematrik.com">Tim Holt</a>is licensed under a <a rel="license"
 						href="http://creativecommons.org/licenses/by-nc-sa/3.0/au/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Australia License.</a>
-						Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://skwashd.github.com/drupal-syd-aug2013/" rel="dct:source">github.com</a>.
+						Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://wftools.github.io/drupalcon-prague-presentation/" rel="dct:source">wftools.github.io/drupalcon-prague-presentation</a>.
 					</p>
 				</section>
 
 				<section>
 					<h2>Image Credits</h2>
 					<ul>
-						<li>Dave Arrest by <a href="https://twitter.com/timaholt">Tim Holt</a></li>
+						<li>Dave Arrest by <a href="http://cinematrik.com">Tim Holt</a></li>
 						<li><a href="https://secure.flickr.com/photos/frisno/2928818748/">Book image by Frisno</a></li>
 						<li><a href="https://www.facebook.com/photo.php?fbid=10151511695086828&set=t.726121827&type=3&theater">Young Dries, by Buytaert Family</a>, altered by Dave Hall</li>
 						<li><a href="http://buytaert.net/album/miscellaneous-2000/student-room">Dries in dorm, by Dries Buytaert</a>, altered by Dave Hall</li>
@@ -414,6 +440,7 @@
 						<li><a href="https://secure.flickr.com/photos/gerrydincher/68234419">Ten Commandments by gerrydincher</a></li>
 						<li><a href="https://secure.flickr.com/photos/zakh/337938459/">Toolbox by zakh</a></li>
 						<li><a href="https://secure.flickr.com/photos/clintjcl/5577145357/">Thumbs up by clinktjcl</a></li>
+						<li>ADD MISSING CREDITS HERE</li>
 					</ul>
 				</section>
 			</div>
